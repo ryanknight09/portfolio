@@ -4,17 +4,22 @@ import FuturaMedium from "../fonts/futura_medium-webfont.woff";
 
 const GlobalStyles = createGlobalStyle`
     body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif, "futura";
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+        animation-name: backgroundColorCycle;
+        animation-duration: 65s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear; 
+        margin: 0;
+        font-family: futura-medium -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif, "futura";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+            monospace;
     }
 
     @font-face {
@@ -28,6 +33,24 @@ const GlobalStyles = createGlobalStyle`
         src: url(${FuturaBold}) format('woff');
         font-weight: bold;
         font-style: normal;
+    }
+
+    @keyframes backgroundColorCycle {
+        0% {
+            background: #a7d1ab ;
+        }
+        25% {
+            background: #d69382;
+        }
+        50% {
+            background: #adcc9d;
+        }
+        75% {
+            background: #9f87af;
+        }
+        100% {
+            background: #89B6C4;
+        }
     }
 `;
 

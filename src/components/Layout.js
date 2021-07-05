@@ -6,19 +6,19 @@ const Layout = ({ children }) => {
   const links = [
     {
       to: "/#about",
-      text: "About",
+      text: "about",
     },
     {
       to: "/#experience",
-      text: "Experience",
+      text: "experience",
     },
     {
       to: "/#work",
-      text: "Work",
+      text: "work",
     },
     {
       to: "/#contact",
-      text: "Contact",
+      text: "contact",
     },
   ];
 

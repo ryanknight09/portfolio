@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="47px" viewBox="0 0 58 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>RK Logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-24.000000, -22.000000)">
+            <g id="logo" transform="translate(24.000000, 21.000000)">
+                <rect id="Rectangle" fill="#D60000" x="7" y="10.5" width="37.1" height="37.1"></rect>
+                <polygon id="Rectangle-Copy" fill="#FF7070" points="-1.59122715e-14 1.4 37.1 1.4 44.1 10.5 7 10.5"></polygon>
+                <polygon id="Rectangle-Copy" fill="#710000" transform="translate(3.500000, 24.500000) scale(-1, 1) rotate(-270.000000) translate(-3.500000, -24.500000) " points="-19.6 21 17.5 21 26.6 28 -10.5 28"></polygon>
+                <path d="M57.064,43.514 L57.946,46.496 C56.854,47.168 55.468,47.588 53.956,47.588 C50.26,47.588 47.614,44.774 46.816,39.734 L46.732,39.734 C43.96,39.734 41.65,39.02 39.466,38.18 L39.466,43.682 L43.666,43.682 L43.666,47 L31.066,47 L31.066,43.682 L35.476,43.682 L35.476,21.506 L31.066,21.506 L31.066,18.188 L39.466,18.188 L39.466,30.62 C42.07,28.31 45.136,26.714 48.244,26.714 C52.066,26.714 55.384,28.898 55.342,33.056 C55.3,36.248 52.822,38.432 49.798,39.314 C50.554,42.632 52.234,44.144 54.25,44.186 C55.3,44.186 56.224,43.976 57.064,43.514 Z M39.466,35.45 C41.944,36.374 44.044,36.71 45.85,36.71 C48.538,36.626 51.058,35.492 51.058,33.182 C51.058,31.25 49.588,30.116 47.236,30.116 C45.01,30.116 42.196,31.418 39.466,33.518 L39.466,35.45 Z" id="k" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
