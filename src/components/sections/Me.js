@@ -6,7 +6,7 @@ const StyledSection = styled.section`
   margin: 0px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 
   h1 {
@@ -28,40 +28,40 @@ const StyledSection = styled.section`
     color: #e0e0e0;
     margin: 0;
   }
+
+  p {
+    max-width: 500px;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1rem;
+  }
 `;
 
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 200px;
 
   div {
     margin-right: auto;
+    margin-top: 5px;
   }
 `;
 
-const ContactLink = styled.a`
-  text-decoration: none;
-  color: #b30000;
-  height: 40px;
-  width: 111px;
-  border: 2px solid #b30000;
-  font-family: futura-medium;
-  padding: 0.5rem 1.5rem;
-  font-weight: 900;
-  letter-spacing: 0.1rem;
-`;
-
 const ContactButton = styled.button`
-  text-decoration: none;
-  color: #b30000;
-  height: 40px;
-  width: 111px;
+  background-color: transparent;
   border: 2px solid #b30000;
+  color: #b30000;
   font-family: futura-medium;
+  cursor: pointer;
   padding: 0.5rem 1.5rem;
   font-weight: 900;
   letter-spacing: 0.1rem;
+  margin-top: 35px;
+  font-size: 16px;
 `;
 
 const Me = () => {
@@ -77,10 +77,17 @@ const Me = () => {
         <div>
           <h3>a front-end developer</h3>
         </div>
+        <div>
+          <p>
+            I am currently residing in Salt lake City, Utah where I write React
+            code, and Graphql api's. I am currently working for Storage Craft
+            Technologies focusing on cloud backup and and recovery services.
+          </p>
+        </div>
+        <div>
+          <ContactButton>get in touch</ContactButton>
+        </div>
       </FlexContainer>
-      <div>
-        <ContactLink>get in touch</ContactLink>
-      </div>
     </StyledSection>
   );
 };

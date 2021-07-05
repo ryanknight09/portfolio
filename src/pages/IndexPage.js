@@ -24,9 +24,6 @@ const StyledMain = styled.main`
   @media (max-width: 768px) {
     padding: 0px 50px;
   }
-  @media (max-width: 480px) {
-    padding: 0px 25px;
-  }
 `;
 
 const IndexPage = () => {

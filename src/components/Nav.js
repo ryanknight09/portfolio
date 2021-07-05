@@ -14,7 +14,7 @@ const StyledHeader = styled.header`
   display: flex;
   transition: top 0.8s;
   align-items: center;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
   box-shadow: ${({ showNav }) =>
     showNav ? "" : "0 10px 30px -10px rgba(2, 12, 27, 0.7);"};
 `;
