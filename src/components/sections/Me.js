@@ -2,12 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledSection = styled.section`
-  height: 100vh;
-  margin: 0px auto;
+  min-height: 100vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
 
   h1 {
     font-family: futura-bold;
@@ -16,16 +14,16 @@ const StyledSection = styled.section`
   }
 
   h2 {
-    font-size: clamp(40px, 5vw, 80px);
+    font-size: clamp(40px, 6vw, 75px);
     font-family: futura-bold;
     color: white;
     margin: 0;
   }
 
   h3 {
-    font-size: clamp(30px, 3vw, 70px);
+    font-size: clamp(30px, 4vw, 75px);
     font-family: futura-bold;
-    color: #e0e0e0;
+    color: white;
     margin: 0;
   }
 
@@ -40,15 +38,7 @@ const StyledSection = styled.section`
 `;
 
 const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 200px;
-
-  div {
-    margin-right: auto;
-    margin-top: 5px;
-  }
+  margin: auto;
 `;
 
 const ContactButton = styled.button`
@@ -79,9 +69,10 @@ const Me = () => {
         </div>
         <div>
           <p>
-            I am currently residing in Salt lake City, Utah where I write React
-            code, and Graphql api's. I am currently working for Storage Craft
-            Technologies focusing on cloud backup and and recovery services.
+            I am currently residing in Salt lake City, Utah where I write
+            Javascript, React, and Graphql api's. I am currently working for
+            Storage Craft Technologies focusing on cloud backup and and recovery
+            services.
           </p>
         </div>
         <div>

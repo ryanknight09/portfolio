@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
-import useShowNav from "../hooks.js/useShowNav";
+import useShowNav from "../hooks/useShowNav";
 import logo from "../assets/logo.svg";
 
 const StyledHeader = styled.header`
   box-sizing: border-box;
+  z-index: 15;
   position: fixed;
   width: 100%;
   height: 100px;
@@ -79,7 +80,7 @@ const Nav = ({ links }) => {
         <StyledLinks>
           <ul>
             {links.map(({ to, text }) => (
-              <li>
+              <li key={to}>
                 <HashLink smooth to={to}>
                   {text}
                 </HashLink>

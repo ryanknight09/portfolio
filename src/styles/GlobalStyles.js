@@ -17,6 +17,27 @@ const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
     }
 
+     /* Scrollbar Styles */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #4B4B4B;
+  }
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+  body::-webkit-scrollbar-track {
+    background: rgba(75, 75, 75, 0.3);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(100, 100, 100, .5);
+    border-radius: 10px;
+  }
+
+    section {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
     code {
         font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
             monospace;

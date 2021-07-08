@@ -7,8 +7,12 @@ const StyledSection = styled.section`
   margin: 0px auto;
 `;
 
-const Work = () => {
-  return <StyledSection id="work">I'm a Work</StyledSection>;
+const Projects = () => {
+  return (
+    <StyledSection id="projects">
+      <h2>Things Iv Built</h2>
+    </StyledSection>
+  );
 };
 
-export default Work;
+export default Projects;

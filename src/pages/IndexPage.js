@@ -16,7 +16,7 @@ const StyledMain = styled.main`
   width: 100%;
   max-width: 1600px;
   min-height: 100vh;
-  padding: 0px 300px;
+  padding: 0px 150px;
 
   @media (max-width: 1080px) {
     padding: 0px 100px;
