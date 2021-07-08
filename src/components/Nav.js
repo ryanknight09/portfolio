@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { HashLink } from "react-router-hash-link";
 import useShowNav from "../hooks/useShowNav";
 import logo from "../assets/logo.svg";
+import { resume } from "../assets";
 
 const StyledHeader = styled.header`
   box-sizing: border-box;
@@ -88,11 +89,7 @@ const Nav = ({ links }) => {
             ))}
           </ul>
           <div>
-            <Resume
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Resume href={resume} target="_blank" rel="noopener noreferrer">
               resum&eacute;
             </Resume>
           </div>
