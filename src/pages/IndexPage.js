@@ -9,6 +9,7 @@ import {
   Me,
 } from "../components";
 import styled from "styled-components";
+import { useGlobalContext } from "../GlobalStateContext";
 
 const StyledMain = styled.main`
   box-sizing: border-box;
@@ -17,6 +18,7 @@ const StyledMain = styled.main`
   max-width: 1600px;
   min-height: 100vh;
   padding: 0px 150px;
+  filter: ${(props) => props.blur && "blur(10px)"};
 
   @media (max-width: 1080px) {
     padding: 0px 100px;
@@ -36,9 +38,13 @@ const StyledMain = styled.main`
 `;
 
 const IndexPage = () => {
+  const {
+    globalState: { blurMainBackground },
+  } = useGlobalContext();
+
   return (
     <Layout>
-      <StyledMain>
+      <StyledMain blur={blurMainBackground}>
         <Me />
         <About />
         <Experience />
