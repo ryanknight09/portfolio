@@ -24,6 +24,15 @@ const StyledMain = styled.main`
   @media (max-width: 768px) {
     padding: 0px 50px;
   }
+
+  @keyframes fadeInFromBlack {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const IndexPage = () => {

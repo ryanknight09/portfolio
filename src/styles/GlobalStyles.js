@@ -7,17 +7,14 @@ const GlobalStyles = createGlobalStyle`
     ${variables};
 
     body {
-        animation-name: backgroundColorCycle;
-        animation-duration: 65s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-timing-function: linear; 
+        ${({ theme }) => theme.mixins.backGroundRotation};
         margin: 0;
         font-family: futura-medium -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
             "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
             sans-serif, "futura";
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
     }
 
      /* Scrollbar Styles */
@@ -27,9 +24,6 @@ const GlobalStyles = createGlobalStyle`
   }
   body::-webkit-scrollbar {
     width: 12px;
-  }
-  body::-webkit-scrollbar-track {
-    background: rgba(75, 75, 75, 0.3);
   }
   body::-webkit-scrollbar-thumb {
     background-color: rgba(100, 100, 100, .5);

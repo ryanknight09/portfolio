@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { ContactButton } from "../ContactButton";
+import { ContactButton } from "../styledComponents";
 
 const StyledSection = styled.section`
   min-height: 100vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  animation: blurr_to_clear 1.5s ease;
 
   h1 {
     font-family: var(--bold-font);
     color: #4b4b4b;
-    margin: 0 0 0 5px;
+    margin: 0;
+    animation: left_to_right 2s ease;
   }
 
   h2 {
@@ -19,6 +21,8 @@ const StyledSection = styled.section`
     font-family: var(--bold-font);
     color: white;
     margin: 0;
+    animation: right_to_left 3s ease;
+    white-space: nowrap;
   }
 
   h3 {
@@ -26,10 +30,43 @@ const StyledSection = styled.section`
     font-family: var(--bold-font);
     color: var(--white);
     margin: 0;
+    animation: left_to_right 2.5s ease;
   }
 
   p {
     ${({ theme }) => theme.mixins.pLetterAttrs}
+    ${({ theme }) => theme.mixins.fadeIn}
+  }
+
+  button {
+    ${({ theme }) => theme.mixins.fadeIn}
+  }
+
+  @keyframes blurr_to_clear {
+    from {
+      filter: blur(3px);
+    }
+    to {
+      filter: blur(0px);
+    }
+  }
+
+  @keyframes right_to_left {
+    from {
+      margin-left: 100%;
+    }
+    to {
+      margin-left: 0;
+    }
+  }
+
+  @keyframes left_to_right {
+    from {
+      margin-left: -100%;
+    }
+    to {
+      margin-left: 0;
+    }
   }
 `;
 

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContactButton = styled.button`
+const ContactButton = styled.button`
   background-color: transparent;
   border: var(--red-border);
   color: var(--main-red);
@@ -11,4 +11,10 @@ export const ContactButton = styled.button`
   letter-spacing: 0.1rem;
   margin-top: 35px;
   font-size: 16px;
+
+  :active {
+    transform: var(--button-down);
+  }
 `;
+
+export default ContactButton;

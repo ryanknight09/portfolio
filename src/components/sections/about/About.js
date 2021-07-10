@@ -2,9 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { portraitBackground } from "../../../assets";
 import { AboutContent, liItemsOne } from "./content";
+import { useIsInViewport } from "../../../hooks";
 
 const StyledSection = styled.section`
   ${({ theme }) => theme.mixins.sectionAttrs};
+  ${({ theme, isInViewPort }) => isInViewPort && theme.mixins.fadeIn}
 
   h2 {
     ${({ theme }) => theme.mixins.h2};
@@ -19,11 +21,11 @@ const StyledSection = styled.section`
     ${({ theme }) => theme.mixins.pLetterAttrs}
 
     a {
-      color: #4b4b4b;
+      color: var(--text-grey);
       text-decoration: none;
 
       &:hover {
-        border-bottom: 2px solid #4b4b4b;
+        border-bottom: var(--grey-border);
       }
     }
   }
@@ -92,8 +94,10 @@ const StyledPic = styled.div`
 `;
 
 const About = () => {
+  const { elementRef, isInViewPort } = useIsInViewport();
+
   return (
-    <StyledSection id="about">
+    <StyledSection ref={elementRef} id="about" isInViewPort={isInViewPort}>
       <h2>about me</h2>
       <StyledGrid>
         <div>

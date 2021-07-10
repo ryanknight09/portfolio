@@ -3,9 +3,11 @@ import styled from "styled-components";
 import { jobs } from "./Content";
 import SelectButtons from "./SelectButtons";
 import ExperienceContent from "./ExperienceContent";
+import { useIsInViewport } from "../../../hooks";
 
 const StyledSection = styled.section`
   ${({ theme }) => theme.mixins.sectionAttrs};
+  ${({ theme, isInViewPort }) => isInViewPort && theme.mixins.fadeIn}
 
   h2 {
     ${({ theme }) => theme.mixins.h2};
@@ -29,6 +31,7 @@ const FlexContainer = styled.div`
 `;
 
 const Experience = () => {
+  const { elementRef, isInViewPort } = useIsInViewport();
   const [job, setJob] = React.useState(jobs["StorageCraft"]);
   const buttons = ["StorageCraft", "Exact Sciences", "Eastern Washington"];
 
@@ -37,7 +40,7 @@ const Experience = () => {
   };
 
   return (
-    <StyledSection id="experience">
+    <StyledSection ref={elementRef} id="experience" isInViewPort={isInViewPort}>
       <h2>experience</h2>
       <FlexContainer>
         <SelectButtons buttons={buttons} onClick={handleButtonClick} />

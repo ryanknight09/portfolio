@@ -5,8 +5,10 @@ const variables = css`
     --main-red: #b30000;
     --white: #ffffff;
     --red-border: 2px solid #b30000;
+    --grey-border: 2px solid #4b4b4b;
+    --text-grey: #4b4b4b;
 
-    --section-padding: 200px 0;
+    --section-padding: 100px 0;
 
     --medium-font: futura-medium;
     --bold-font: futura-bold;

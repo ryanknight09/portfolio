@@ -1,6 +1,32 @@
 import { css } from "styled-components";
 
 const mixins = {
+  backGroundRotation: css`
+    animation-name: backgroundColorCycle;
+    animation-duration: 65s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+    @keyframes backgroundColorCycle {
+      0% {
+        background: #a7d1ab;
+      }
+      25% {
+        background: #d69382;
+      }
+      50% {
+        background: #adcc9d;
+      }
+      75% {
+        background: #9f87af;
+      }
+      100% {
+        background: #89b6c4;
+      }
+    }
+  `,
+
   fadeIn: css`
     opacity: 1;
     animation-name: opacityFade;
