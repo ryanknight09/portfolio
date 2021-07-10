@@ -41,6 +41,7 @@ const StyledUl = styled.ul`
 const StyledPic = styled.div`
   position: relative;
   width: 400px;
+  margin-top: 25px;
 
   .wrapper {
     display: block;
@@ -105,7 +106,7 @@ const Text = ({ marginLeft }) => {
   );
 };
 
-const FeatureOne = ({ reversed }) => {
+const Feature = ({ reversed }) => {
   return (
     <FlexContainer reversed>
       {reversed ? (
@@ -123,4 +124,4 @@ const FeatureOne = ({ reversed }) => {
   );
 };
 
-export default FeatureOne;
+export default Feature;

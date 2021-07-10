@@ -45,14 +45,14 @@ const StyledLinks = styled.div`
     position: relative;
 
     a {
-      color: #ffffff;
+      color: var(--white);
       padding: 10px;
-      font-family: futura-medium;
+      font-family: var(--medium-font);
       text-decoration: none;
       letter-spacing: 0.15rem;
 
       &:hover {
-        border-bottom: 2px solid #ffffff;
+        border-bottom: 2px solid var(--white);
       }
     }
   }
@@ -60,11 +60,11 @@ const StyledLinks = styled.div`
 
 const Resume = styled.a`
   text-decoration: none;
-  color: #b30000;
+  color: var(--main-red);
   height: 40px;
   width: 111px;
-  border: 2px solid #b30000;
-  font-family: futura-medium;
+  border: var(--red-border);
+  font-family: var(--medium-font);
   padding: 0.5rem 1.5rem;
   font-weight: 900;
   letter-spacing: 0.1rem;
@@ -100,11 +100,3 @@ const Nav = ({ links }) => {
 };
 
 export default Nav;
-
-// const scrollWithOffset = (el) => {
-//   const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-//   const yOffset = -100;
-//   window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
-// };
-
-//<HashLink smooth to={to} scroll isScrollingUp={showNav}>

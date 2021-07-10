@@ -1,8 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 import FuturaBold from "../fonts/futura_bold-webfont.woff";
 import FuturaMedium from "../fonts/futura_medium-webfont.woff";
+import variables from "./variables";
 
 const GlobalStyles = createGlobalStyle`
+    ${variables};
+
     body {
         animation-name: backgroundColorCycle;
         animation-duration: 65s;

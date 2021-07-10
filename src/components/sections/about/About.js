@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { portraitBackground, portraitOverlay } from "../../../assets";
+import { portraitBackground } from "../../../assets";
 import { AboutContent, liItemsOne } from "./content";
 
 const StyledSection = styled.section`
-  padding: 100px 0;
-  max-width: 900px;
+  ${({ theme }) => theme.mixins.sectionAttrs};
 
   h2 {
-    font-family: futura-bold;
-    color: #b30000;
+    ${({ theme }) => theme.mixins.h2};
   }
 
   img {
@@ -18,12 +16,7 @@ const StyledSection = styled.section`
   }
 
   p {
-    font-family: Helvetica;
-    color: #ffffff;
-    max-width: 600px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.1rem;
+    ${({ theme }) => theme.mixins.pLetterAttrs}
 
     a {
       color: #4b4b4b;
@@ -53,8 +46,8 @@ const StyledLi = styled.li`
   }
   height: 35px;
   padding: 3px 0 0 48px;
-  font-family: Courier;
-  color: white;
+  font-family: var(--special-font);
+  color: var(--white);
 `;
 
 const StyledUl = styled.ul`
@@ -90,7 +83,7 @@ const StyledPic = styled.div`
       position: absolute;
       width: 100%;
       height: 97%;
-      border: 2px solid #b30000;
+      border: var(--red-border);
       top: -15px;
       left: -15px;
       z-index: 2;
@@ -123,7 +116,6 @@ const About = () => {
             <img className="img" src={portraitBackground} alt="Headshot" />
           </div>
         </StyledPic>
-        {/* <StyledImg src={portraitBackground} alt="" /> */}
       </StyledGrid>
     </StyledSection>
   );
