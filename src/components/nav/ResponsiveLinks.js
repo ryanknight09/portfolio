@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useGlobalContext } from "../../GlobalStateContext";
 import { HashLink } from "react-router-hash-link";
-import { Resume } from "../../components/styledComponents";
 import { resume } from "../../assets";
 import { useMediaQuery } from "../../hooks";
 
@@ -17,10 +16,6 @@ const StyledMenu = styled.div`
 const MenuIcon = styled.div`
   cursor: pointer;
   content: url("https://img.icons8.com/ios/50/000000/menu--v3.png");
-
-  &:hover {
-    content: url("https://img.icons8.com/pastel-glyph/50/000000/double-left.png");
-  }
 `;
 
 const MeneButton = styled.button`
@@ -53,8 +48,7 @@ const StyledAside = styled.aside`
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 
   ul {
-    padding: 25px 0;
-    margin: auto;
+    padding: 0;
     list-style: none;
     text-align: center;
   }
@@ -66,7 +60,6 @@ const StyledAside = styled.aside`
 
     a {
       color: #4b4b4b;
-      padding: 10px;
       font-family: var(--medium-bold);
       font-weight: 600;
       text-decoration: none;
@@ -77,6 +70,19 @@ const StyledAside = styled.aside`
       }
     }
   }
+`;
+
+const Resume = styled.a`
+  text-decoration: none;
+  color: var(--main-red);
+  height: 40px;
+  width: 111px;
+  border: var(--red-border);
+  font-family: var(--medium-font);
+  padding: 0.5rem 1.5rem 12px 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  transform: var(--button-down);
 `;
 
 const ResponsiveLinks = ({ links }) => {
@@ -116,12 +122,17 @@ const ResponsiveLinks = ({ links }) => {
               </HashLink>
             </li>
           ))}
+          <li>
+            <Resume href={resume} target="_blank" rel="noopener noreferrer">
+              resum&eacute;
+            </Resume>
+          </li>
         </ul>
-        <div style={{ marginBottom: 250 }}>
+        {/* <div>
           <Resume href={resume} target="_blank" rel="noopener noreferrer">
             resum&eacute;
           </Resume>
-        </div>
+        </div> */}
       </StyledAside>
     </StyledMenu>
   );
