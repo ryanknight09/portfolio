@@ -4,30 +4,26 @@ import { ReversedSection } from "../../styledComponents";
 
 const StyledPic = styled.div`
   position: relative;
-  width: 400px;
+  max-width: 375px;
+  width: 100%;
+  height: auto;
   margin-top: 25px;
 
-  .wrapper {
-    display: block;
-    position: relative;
+  .img {
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
     width: 100%;
-
-    .img {
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 97%;
-      border: var(--red-border);
-      top: -15px;
-      left: -15px;
-      z-index: 2;
-    }
+    height: 98%;
+    border: var(--red-border);
+    top: -8px;
+    left: -8px;
+    z-index: 2;
   }
 `;
 
@@ -35,9 +31,7 @@ const Pic = ({ marginLeft, src }) => {
   return (
     <ReversedSection marginLeft={marginLeft}>
       <StyledPic>
-        <div className="wrapper">
-          <img className="img" src={src} alt="headshot" />
-        </div>
+        <img className="img" src={src} alt="headshot" />
       </StyledPic>
     </ReversedSection>
   );

@@ -11,7 +11,7 @@ const useIsInViewport = () => {
 
         setIsInViewPort(isInViewPort);
       },
-      { threshold: "0.2" }
+      { threshold: "0.1" }
     );
 
     observer.observe(elementRef.current);

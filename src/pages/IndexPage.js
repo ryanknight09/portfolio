@@ -26,6 +26,9 @@ const StyledMain = styled.main`
   @media (max-width: 768px) {
     padding: 0px 50px;
   }
+  @media (max-width: 380px) {
+    padding: 0px 20px;
+  }
 
   @keyframes fadeInFromBlack {
     0% {
