@@ -117,7 +117,7 @@ const ResponsiveLinks = ({ links }) => {
             </li>
           ))}
         </ul>
-        <div style={{ margin: "auto" }}>
+        <div style={{ marginBottom: 250 }}>
           <Resume href={resume} target="_blank" rel="noopener noreferrer">
             resum&eacute;
           </Resume>
