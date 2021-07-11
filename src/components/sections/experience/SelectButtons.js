@@ -4,6 +4,20 @@ import styled from "styled-components";
 const StyledList = styled.div`
   @media (max-width: 900px) {
     overflow-x: auto;
+
+    ::-webkit-scrollbar {
+      height: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      height: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 0;
+      background-color: rgb(179, 0, 0);
+      cursor: pointer;
+    }
   }
 
   ul {
@@ -23,7 +37,7 @@ const StyledList = styled.div`
       display: flex;
 
       li {
-        border-bottom: 2px solid rgb(179, 0, 0);
+        // border-bottom: 2px solid rgb(179, 0, 0);
       }
     }
   }
