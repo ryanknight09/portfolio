@@ -13,6 +13,10 @@ const StyledUl = styled.ul`
   }
 `;
 
+const Anchor = styled.a`
+  margin-right: 20px;
+`;
+
 const TextContent = ({ marginLeft, content }) => {
   const { title, stack, description } = content;
 
@@ -25,7 +29,7 @@ const TextContent = ({ marginLeft, content }) => {
         ))}
       </StyledUl>
       <p>{description}</p>
-      <a
+      <Anchor
         href="https://github.com/ryanknight09/bitcoin-miner"
         target="_blank"
         rel="noopener noreferrer"
@@ -34,8 +38,8 @@ const TextContent = ({ marginLeft, content }) => {
           src="https://img.icons8.com/ios-filled/35/000000/github.png"
           alt="github-link"
         />
-      </a>
-      <a
+      </Anchor>
+      <Anchor
         href="https://bitcoin-miner-c247a.web.app/"
         target="_blank"
         rel="noopener noreferrer"
@@ -44,7 +48,7 @@ const TextContent = ({ marginLeft, content }) => {
           src="https://img.icons8.com/ios-filled/35/000000/external.png"
           alt="to-site"
         />
-      </a>
+      </Anchor>
     </ReversedSection>
   );
 };
