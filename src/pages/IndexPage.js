@@ -53,7 +53,6 @@ const IndexPage = () => {
         <Experience />
         <Work />
         <Projects />
-        <Contact />
       </StyledMain>
     </Layout>
   );

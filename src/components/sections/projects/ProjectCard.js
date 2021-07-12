@@ -21,9 +21,11 @@ const StyledCard = styled.div`
 const StyledDiv = styled.div`
   display: flex;
   justify-content: space-evenly;
+  margin-top: auto;
 `;
 
-const ProjectCard = () => {
+const ProjectCard = ({ content }) => {
+  const { gitLink, title, description, stacks } = content;
   return (
     <StyledCard>
       <div class="row1">
@@ -31,21 +33,20 @@ const ProjectCard = () => {
           src="https://img.icons8.com/dotty/50/000000/folder-invoices.png"
           alt="folderIcon"
         />
-        <a href={"google.com"} target="_blank" rel="noopener noreferrer">
+        <a href={gitLink} target="_blank" rel="noopener noreferrer">
           <img
             src="https://img.icons8.com/ios-filled/35/000000/github.png"
             alt="github-link"
           />
         </a>
       </div>
-      <h3 style={{ padding: "10px 25px", margin: 0 }}>RGB COLOR GAME</h3>
-      <p style={{ padding: "10px 25px", margin: 0 }}>
-        Building a custom multisite compatible WordPress plugin to build global
-        search with Algolia
-      </p>
+      <h3 style={{ padding: "10px 25px", margin: 0 }}>{title}</h3>
+      <p style={{ padding: "0 25px", margin: 0 }}>{description}</p>
       <StyledDiv>
-        {temp.map((p) => (
-          <p style={{ fontSize: 12 }}>{p}</p>
+        {stacks.map((stack) => (
+          <p key={title} style={{ fontSize: 12 }}>
+            {stack}
+          </p>
         ))}
       </StyledDiv>
     </StyledCard>
@@ -53,5 +54,3 @@ const ProjectCard = () => {
 };
 
 export default ProjectCard;
-
-const temp = ["Css", "Html", "vanilla Js", "another"];

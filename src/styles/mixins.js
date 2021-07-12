@@ -3,7 +3,7 @@ import { css } from "styled-components";
 const mixins = {
   backGroundRotation: css`
     animation-name: backgroundColorCycle;
-    animation-duration: 65s;
+    animation-duration: 90s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;

@@ -38,6 +38,11 @@ const StyledSection = styled.section`
     ${({ theme }) => theme.mixins.fadeIn}
   }
 
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
   button {
     ${({ theme }) => theme.mixins.fadeIn}
   }
@@ -89,14 +94,23 @@ const Me = () => {
         </div>
         <div>
           <p>
-            I am currently residing in Salt lake City, Utah where I write
-            Javascript, React, and Graphql api's. I am currently working for
-            Storage Craft Technologies focusing on cloud backup and and recovery
-            services.
+            I am currently working for Storage Craft Technologies focusing on
+            cloud backup and and recovery services. I specialize in React, and
+            Apollo for state management. I have dabbled in various languages
+            from front end to back end and even some assembly code back in the
+            day...
           </p>
         </div>
         <div>
-          <ContactButton>get in touch</ContactButton>
+          <ContactButton>
+            <a
+              href="https://www.linkedin.com/in/ryan-knight09/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              get in touch
+            </a>
+          </ContactButton>
         </div>
       </FlexContainer>
     </StyledSection>
