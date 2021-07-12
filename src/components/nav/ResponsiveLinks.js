@@ -42,7 +42,7 @@ const StyledAside = styled.aside`
   width: 70%;
   height: 100vh;
   opacity: 0.95;
-  box-shadow: -10px 0px 30px -15px black;
+  box-shadow: -10px 0px 30px -15px var(--shadow-box);
   transform: translateX(${(props) => (props.showMenu ? 0 : "100vw")});
   visibility: ${(props) => (props.showMenu ? "visible" : "hidden")};
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);

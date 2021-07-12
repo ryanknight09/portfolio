@@ -2,6 +2,7 @@ import { css } from "styled-components";
 
 const variables = css`
   :root {
+    --shadow-box: #727272;
     --main-red: #b30000;
     --white: #ffffff;
     --red-border: 2px solid #b30000;

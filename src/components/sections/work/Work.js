@@ -47,7 +47,7 @@ const content = {
     description: `A fun web app to showcase React. 
                   The number of coins "mined" is run against the real time btc price, 
                   fetched from an external api on a five second interval.`,
-    gitLink: "",
-    hostedLink: "",
+    gitLink: "https://github.com/ryanknight09/bitcoin-miner",
+    hostedLink: "https://bitcoin-miner-c247a.web.app/",
   },
 };

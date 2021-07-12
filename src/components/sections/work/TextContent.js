@@ -18,7 +18,7 @@ const Anchor = styled.a`
 `;
 
 const TextContent = ({ marginLeft, content }) => {
-  const { title, stack, description } = content;
+  const { title, stack, description, gitLink, hostedLink } = content;
 
   return (
     <ReversedSection marginLeft={marginLeft}>
@@ -29,26 +29,20 @@ const TextContent = ({ marginLeft, content }) => {
         ))}
       </StyledUl>
       <p>{description}</p>
-      <Anchor
-        href="https://github.com/ryanknight09/bitcoin-miner"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Anchor href={gitLink} target="_blank" rel="noopener noreferrer">
         <img
           src="https://img.icons8.com/ios-filled/35/000000/github.png"
           alt="github-link"
         />
       </Anchor>
-      <Anchor
-        href="https://bitcoin-miner-c247a.web.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          src="https://img.icons8.com/ios-filled/35/000000/external.png"
-          alt="to-site"
-        />
-      </Anchor>
+      {hostedLink && (
+        <Anchor href={hostedLink} target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://img.icons8.com/ios-filled/35/000000/external.png"
+            alt="to-site"
+          />
+        </Anchor>
+      )}
     </ReversedSection>
   );
 };
