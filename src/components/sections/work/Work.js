@@ -38,7 +38,7 @@ const content = {
     stack: ["React", "React-Router, HashLink, Styled-Components"],
     description: `A fully responsive, single page, smooth scroller portfolio! Other than it a being a fancy pants resume,
                   this project is to showcase native html / css skills using NO style libraries.`,
-    gitLink: "",
+    gitLink: "https://github.com/ryanknight09/portfolio",
     hostedLink: "",
   },
   bitMiner: {
