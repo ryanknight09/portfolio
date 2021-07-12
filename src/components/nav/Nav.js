@@ -43,10 +43,6 @@ const links = [
     to: "/#work",
     text: "work",
   },
-  {
-    to: "/#contact",
-    text: "contact",
-  },
 ];
 
 const Nav = () => {

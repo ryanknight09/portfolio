@@ -128,11 +128,6 @@ const ResponsiveLinks = ({ links }) => {
             </Resume>
           </li>
         </ul>
-        {/* <div>
-          <Resume href={resume} target="_blank" rel="noopener noreferrer">
-            resum&eacute;
-          </Resume>
-        </div> */}
       </StyledAside>
     </StyledMenu>
   );
