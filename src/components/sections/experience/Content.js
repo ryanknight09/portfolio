@@ -17,6 +17,18 @@ const Content = ({ title, time, items }) => {
 export default Content;
 
 export const jobs = {
+  EvolveMEP: {
+    title: "Frontend Lead Developer @ EvolveMEP",
+    time: "Aug 2021 - Present",
+    items: [
+      `Full stack front end lead for the entire evolve product line.`,
+      `Architected and implimented AWS Appsync graphql server along with client side front end in React.`,
+      `Focus on micro front ends via module federation, scaling with NX.dev, React testing / Cypress E2E, and Storybook.`,
+      `Architecture design, review pull requests, meetings with UX and PM, tasking
+        out jira tickets for module team leads, and lighthouse (beta) customer meetings where we gather
+        customer requirements.`,
+    ],
+  },
   StorageCraft: {
     title: "Frontend Developer @ StorageCraft",
     time: "Jun 2019 - Present",

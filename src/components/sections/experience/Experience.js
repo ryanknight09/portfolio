@@ -33,7 +33,7 @@ const FlexContainer = styled.div`
 const Experience = () => {
   const { elementRef, isInViewPort } = useIsInViewport();
   const [job, setJob] = React.useState(jobs["StorageCraft"]);
-  const buttons = ["StorageCraft", "Exact Sciences", "Eastern Washington"];
+  const buttons = ["EvolveMEP","StorageCraft", "Exact Sciences", "Eastern Washington"];
 
   const handleButtonClick = (e) => {
     setJob(jobs[e.target.name]);
