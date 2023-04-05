@@ -96,7 +96,7 @@ const Me = () => {
           <p>
             I am currently working at a rad startup called GeodeIP, building legal ops software. 
             Software is a silly thing. I enjoy making art out of the front end architecture and 
-            code maintanability. Its a fickle thing. I am not all about software however. I love
+            code maintainability. Its a fickle thing. I am not all about software however. I love
             music and recording music. My life long endeavor is building a kick ass recording studio...
           </p>
         </div>
