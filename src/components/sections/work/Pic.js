@@ -8,6 +8,7 @@ const StyledPic = styled.div`
   height: auto;
   margin-top: 25px;
   border-radius: 8px;
+  text-align: center;
 
   .img {
     max-width: 100%;
@@ -20,7 +21,7 @@ const StyledPic = styled.div`
 
 const Pic = ({ marginLeft, src }) => {
   return (
-    <ReversedSection marginLeft={marginLeft}>
+    <ReversedSection>
       <StyledPic>
         <img className="img" src={src} alt="headshot" />
       </StyledPic>

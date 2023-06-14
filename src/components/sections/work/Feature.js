@@ -26,11 +26,11 @@ const FlexContainer = styled.div`
   }
 `;
 
-const Feature = ({ content, img }) => {
+const Feature = ({ content, imgs }) => {
   return (
     <FlexContainer reversed>
       <TextContent content={content} />
-      <Pic marginLeft src={img} />
+      {imgs.map((img) => <Pic marginLeft src={img} />)}
     </FlexContainer>
   );
 };

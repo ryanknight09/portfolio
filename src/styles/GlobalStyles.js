@@ -8,6 +8,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         ${({ theme }) => theme.mixins.backGroundRotation};
+        background-color: #9f87af;
         margin: 0;
         font-family: futura-medium -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
             "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

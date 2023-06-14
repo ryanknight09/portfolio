@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { bitMiner, portfolio, spotifyClone } from "../../../assets/";
+import { bitMiner, portfolio, spot1, spot2, spot3, spot4, spot5, spot6, spot7 } from "../../../assets/";
 import { useIsInViewport } from "../../../hooks";
 import Feature from "./Feature";
 
@@ -21,13 +21,13 @@ const Work = () => {
       <h2>Things I've Built</h2>
       <Feature
         content={content["spotifyClone"]}
-        img={spotifyClone}
+        imgs={[spot1, spot2, spot3, spot4, spot5, spot6, spot7]}
       />
       <Feature
         content={content["portfolioV1"]}
-        img={portfolio}
+        imgs={[portfolio]}
       />
-      <Feature content={content["bitMiner"]} img={bitMiner} />
+      <Feature content={content["bitMiner"]} imgs={[bitMiner]} />
     </StyledSection>
   );
 };
