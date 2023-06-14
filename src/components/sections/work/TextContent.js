@@ -1,33 +1,25 @@
 import React from "react";
-import { ReversedSection } from "../../styledComponents";
 import styled from "styled-components";
-
-const StyledUl = styled.ul`
-  list-style-type: none;
-  padding: 0;
-  max-width: 225px;
-
-  li {
-    font-family: var(--special-font);
-    font-size: 16px;
-  }
-`;
+import { ReversedSection } from "../../styledComponents";
 
 const Anchor = styled.a`
   margin-right: 20px;
 `;
 
+const Extra = styled.li`
+ font-family: var(--special-font);
+ font-size: 16px;
+ margin: 1rem;
+`
+
 const TextContent = ({ marginLeft, content }) => {
-  const { title, stack, description, gitLink, hostedLink } = content;
+  const { title, stack, description, gitLink, hostedLink, extra } = content;
 
   return (
     <ReversedSection marginLeft={marginLeft}>
       <h3>{title}</h3>
-      <StyledUl>
-        {stack.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </StyledUl>
+      <Extra>{stack.join(', ')}</Extra>
+      {extra && <Extra>{extra}</Extra>}
       <p>{description}</p>
       <Anchor href={gitLink} target="_blank" rel="noopener noreferrer">
         <img

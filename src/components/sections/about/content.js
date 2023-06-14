@@ -3,49 +3,36 @@ import React from "react";
 export const AboutContent = () => {
   return (
     <>
-      {/* <p>
-        As a kid I learned how to send an sms message (when flip phones were
-        cool) to my computer to shut it down remotely. Later, I became obsessed
-        with audio gear and studied recording engineering where I learned about
-        digital signal proccesors. This path eventually led me to computer
-        science.
-      </p> */}
       <p>
-        I started out as a full-stack developer writting Java for a
+        Currently I am building for
         <strong>
           <a
-            href="https://www.exactsciences.com/"
+            href="https://www.geodeip.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {` healthcare company`}
+            {` Geodeip `}
           </a>
         </strong>
-        . My current role for a
-        <strong>
-          <a
-            href="https://www.storagecraft.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {` data backup and recovery shop `}
-          </a>
-        </strong>
-        landed me in front end development. These days I spend the majority of
-        my time writting with javascript. I work with react and graphql back-end
-        for front-end api's. I absolutely LOVE working with gql api's.
+        building legal ops software in a fast pace and ever changing enviornment. Iv implemented complex features such as email inbox integrations and dynamic form builders with
+        drag-and-drop inputs for data collection.
+      </p>
+      <p>
+        I have worked with plenty of legacy code bases and helped companies bring new stacks and architecture to old projects with outdated frameworks.
+        One of my main abilites is the data layer boundry. Getting efficient and non framework locked-in data fetching layer is a must. I spend a lot of time making sure the apps I build can be easily
+        upgraded and maintained.
       </p>
     </>
   );
 };
 
-export const liItemsOne = [
+export const StackList = [
   {
-    text: "Javascript (ES6 +)",
-    icon: "https://img.icons8.com/color/25/000000/javascript--v2.png",
+    text: "Typescript",
+    icon: "https://img.icons8.com/color/25/typescript.png",
   },
   {
-    text: "React (16.4 +)",
+    text: "React",
     icon: "https://img.icons8.com/ultraviolet/25/000000/react--v2.png",
   },
   {

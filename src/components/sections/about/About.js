@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { portraitBackground } from "../../../assets";
-import { AboutContent, liItemsOne } from "./content";
 import { useIsInViewport } from "../../../hooks";
+import { AboutContent, StackList } from "./content";
 
 const StyledSection = styled.section`
   ${({ theme }) => theme.mixins.sectionAttrs};
@@ -42,10 +42,6 @@ const StyledGrid = styled.div`
 
 const StyledLi = styled.li`
   background: url(${(props) => props.icon}) no-repeat left top;
-  filter: grayscale(95%);
-  :hover {
-    filter: none;
-  }
   height: 35px;
   padding: 3px 0 0 48px;
   font-family: var(--special-font);
@@ -55,12 +51,6 @@ const StyledLi = styled.li`
 const StyledUl = styled.ul`
   list-style-type: none;
   padding: 0;
-
-  li {
-    :hover {
-      filter: none;
-    }
-  }
 `;
 
 const StyledPic = styled.div`
@@ -107,7 +97,7 @@ const About = () => {
               These are some of the stacks I work with<strong>:</strong>
             </p>
             <StyledUl>
-              {liItemsOne.map((li) => (
+              {StackList.map((li) => (
                 <StyledLi key={li.text} icon={li.icon}>
                   {li.text}
                 </StyledLi>

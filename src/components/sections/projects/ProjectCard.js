@@ -28,7 +28,7 @@ const ProjectCard = ({ content }) => {
   const { gitLink, title, description, stacks } = content;
   return (
     <StyledCard>
-      <div class="row1">
+      <div className="row1">
         <img
           src="https://img.icons8.com/dotty/50/000000/folder-invoices.png"
           alt="folderIcon"
@@ -43,8 +43,8 @@ const ProjectCard = ({ content }) => {
       <h3 style={{ padding: "10px 25px", margin: 0 }}>{title}</h3>
       <p style={{ padding: "0 25px", margin: 0 }}>{description}</p>
       <StyledDiv>
-        {stacks.map((stack) => (
-          <p key={title} style={{ fontSize: 12 }}>
+        {stacks.map((stack, index) => (
+          <p key={`${stack}-${index}`} style={{ fontSize: 12 }}>
             {stack}
           </p>
         ))}

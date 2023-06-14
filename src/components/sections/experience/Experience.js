@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { jobs } from "./Content";
-import SelectButtons from "./SelectButtons";
-import ExperienceContent from "./ExperienceContent";
 import { useIsInViewport } from "../../../hooks";
+import { jobs } from "./Content";
+import ExperienceContent from "./ExperienceContent";
+import SelectButtons from "./SelectButtons";
 
 const StyledSection = styled.section`
   ${({ theme }) => theme.mixins.sectionAttrs};
@@ -32,8 +32,8 @@ const FlexContainer = styled.div`
 
 const Experience = () => {
   const { elementRef, isInViewPort } = useIsInViewport();
-  const [job, setJob] = React.useState(jobs["StorageCraft"]);
-  const buttons = ["EvolveMEP","StorageCraft", "Exact Sciences", "Eastern Washington"];
+  const [job, setJob] = React.useState(jobs["Geodeip"]);
+  const buttons = ["Geodeip", "QuantumIr", "EvolveMEP", "StorageCraft", "Exact Sciences", "Eastern Washington"];
 
   const handleButtonClick = (e) => {
     setJob(jobs[e.target.name]);

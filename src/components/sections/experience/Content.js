@@ -17,39 +17,64 @@ const Content = ({ title, time, items }) => {
 export default Content;
 
 export const jobs = {
-  EvolveMEP: {
-    title: "Frontend Lead Developer @ EvolveMEP",
-    time: "Aug 2021 - Present",
+  Geodeip: {
+    title: "Sr. Frontend Developer @Geodeip",
+    time: "April 2021 - Present",
     items: [
-      `Full stack front end lead for the entire evolve product line.`,
-      `Architected and implimented AWS Appsync graphql server along with client side front end in React.`,
-      `Focus on micro front ends via module federation, scaling with NX.dev, React testing / Cypress E2E, and Storybook.`,
-      `Architecture design, review pull requests, meetings with UX and PM, tasking
-        out jira tickets for module team leads, and lighthouse (beta) customer meetings where we gather
-        customer requirements.`,
+      `Implement complex features such as email inbox integrations and dynamic form builder with drag-and-drop inputs for data collection.`,
+      `Establish, optimized, and debugged Github CI workflows.`,
+      `Communicate and collaborate with multi-disciplinary teams of engineers, clients, and stakeholders.`,
+      `Build maintainable components for rapid requirement changes and successful customer acquisition.`,
+      `Colaborate with UI/UX designer, Design app theme, repository architecture, and domain design.`,
+      `Help solidify direction of product features.`
+    ],
+  },
+  QuantumIr: {
+    title: "Sr. Frontend Developer (consulting) @QuantumIR",
+    time: "Dec 2022 - Present",
+    items: [
+      `Convert old jquery code to modern scalable React.`,
+      `Implement desktop application via Electron.js.`,
+      `Optimize data fetching via React Query.`,
+      `Create cloud based analytics application for offsite customers.`,
+    ],
+  },
+  EvolveMEP: {
+    title: "Sr. Frontend Developer @EvolveMEP",
+    time: "Aug 2021 - April 2022",
+    items: [
+      `Led eight module designs and teams resulting in streamlined development and efficient delivery of key features.`,
+      `Established GitHub test workflows for front end ui repo.`,
+      `Develop Graphql data api in AWS Lambda to support the front end client.`,
+      `Collaborate with outside product teams to seamlessly integrate new products into existing legacy products, resulting in improved offerings for customers.`,
+      `Align product goals with company objectives by working closely with the VP of Product.`,
+      `Led Team standups, created user stories, and sprint goals.`,
+      `Conducted thorough code reviews to ensure high-quality code and best practice adherence.`
     ],
   },
   StorageCraft: {
-    title: "Frontend Developer @ StorageCraft",
+    title: "Frontend Developer @StorageCraft",
     time: "Jun 2019 - Present",
     items: [
-      `Front end lead developer for Saas Cloud Backup and Recovery for O365, G-suit, and other services.`,
-      `Architected and implimented a back end for front end GQL Apollo Express server to consume REST api's, and handle authorization / authentication.`,
-      `Built a new scalable and more maintainable React / Apollo frontend client while simultaneosly maintaining a legacy sencha.js application still production.`,
-      `Communicated with UI/UX designer for implimentation specifications, regularly met with project manager, and led back log grooming / daily standup.`,
+      `Solved a long standing and critical bug in our internal support app which allowed for more customer tickets to be handled.`,
+      `Built Frontend client using React, Hook Form, Apollo Gql, AWS Amplify.`,
+      `Implemented O-Auth flow for application.`,
+      `Develop GraphQL server stack with Apollo, Express, Jest, and Firebase / Firestore / Realtime Database.`,
+      `Collaborate with developers for seamless integration of server and client components, improving communication and teamwork.`,
+      `Ensure high-quality products and user experience through Cypress E2E, Jest unit tests.`,
     ],
   },
   Exact: {
-    title: "Java Developer @ Exact Sciences",
+    title: "Java Developer @Exact Sciences",
     time: "Jun 2018 - April 1019",
     items: [
-      `Wrote code optimizations inside of monolithic javaEE application and built automated QA testing environment features for business analysts.`,
+      `Wrote a Python chat bot for our internal MS Teams channels to aid in code commits.`,
       `Learned industry practices, git flows, peer reviewing with Jira, and explored a veriety of tech stacks`,
-      `Worked closely with peer interns to solve fun challenges while mainting guidence and direction from lead developers.`,
+      `Helped find and optimize backend functions to speed up information processing.`,
     ],
   },
   Eastern: {
-    title: "Student Teaching Assistant @ Eastern Washington University",
+    title: "Student Teaching Assistant @Eastern Washington University",
     time: "Sep 2017 - Jun 2019",
     items: [
       `Tutored new computer science undergraduates in the intro to java courses as well as intermediate courses.`,

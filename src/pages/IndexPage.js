@@ -1,15 +1,14 @@
 import React from "react";
-import {
-  Layout,
-  About,
-  Experience,
-  Work,
-  Projects,
-  Contact,
-  Me,
-} from "../components";
 import styled from "styled-components";
 import { useGlobalContext } from "../GlobalStateContext";
+import {
+  About,
+  Experience,
+  Layout,
+  Me,
+  Projects,
+  Work,
+} from "../components";
 
 const StyledMain = styled.main`
   box-sizing: border-box;

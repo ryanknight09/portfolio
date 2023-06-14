@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { bitMiner, portfolio, spotifyClone } from "../../../assets/";
+import { useIsInViewport } from "../../../hooks";
 import Feature from "./Feature";
-import { useMediaQuery, useIsInViewport } from "../../../hooks";
-import { bitMiner, portfolioV1 } from "../../../assets/";
 
 const StyledSection = styled.section`
   ${({ theme }) => theme.mixins.sectionAttrs};
@@ -14,16 +14,18 @@ const StyledSection = styled.section`
 `;
 
 const Work = () => {
-  const matches = useMediaQuery("(max-width: 900px)");
   const { elementRef, isInViewPort } = useIsInViewport();
 
   return (
     <StyledSection ref={elementRef} id="work" isInViewPort={isInViewPort}>
       <h2>Things I've Built</h2>
       <Feature
-        reversed={!matches}
+        content={content["spotifyClone"]}
+        img={spotifyClone}
+      />
+      <Feature
         content={content["portfolioV1"]}
-        img={portfolioV1}
+        img={portfolio}
       />
       <Feature content={content["bitMiner"]} img={bitMiner} />
     </StyledSection>
@@ -33,6 +35,15 @@ const Work = () => {
 export default Work;
 
 const content = {
+  spotifyClone: {
+    title: "Spotify Clone",
+    extra: 'UNABLE TO HOST DUE TO SPOTIFY ATTRIBUTION. I would love to showcase this to you during an interview!',
+    stack: ["React", "React Query", "Spotify API", "MUI-V5", "Typescript", "Nx Dev", "Firebase"],
+    description: `Clone of the Spotify App. This app displays the logged in users profile, with top songs, followers, artists and more. 
+    Also, any song is playable with the web player as well.`,
+    gitLink: "https://github.com/ryanknight09/spotify",
+    hostedLink: "",
+  },
   portfolioV1: {
     title: "Portfolio V1",
     stack: ["React", "React-Router, HashLink, Styled-Components"],

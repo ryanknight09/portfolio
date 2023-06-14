@@ -94,10 +94,14 @@ const Me = () => {
         </div>
         <div>
           <p>
-            I am currently working at a rad startup called GeodeIP, building legal ops software.
-            Software is a silly thing. I enjoy making art out of the front end architecture and
-            code maintainability. Its a fickle thing. I am not all about software however. I love
-            music and recording music. My life long endeavor is building a professional recording studio...
+            I am an experienced multidisciplinary frontend engineer working on software teams to solve tough problems and create awesome user experiences.
+            My skill set spans across the entire product development stack, with a high emphasis on the front end.
+            I specialize in new product development for startups and established companies.
+            I am currently interested in and work with React, GraphQL (With Apollo), Styled-Components, Node.js, Vite, and Electron js to name a few.
+            Javascript is my jam, but I also love to learn new languages and frameworks.
+            I'll use whatever tech necessary to get the job done in the best way possible.
+            I am a graduate of Eastern Washington Universtity with a BS in Computer Science.
+            I discovered my passion for writing web applications from old friends who showed my first line of code in college. I love that I get to build apps professionally every day.
           </p>
         </div>
         <div>

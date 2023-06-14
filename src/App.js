@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
-import { IndexPage, PageNotFound, Blog } from "./pages";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles, theme } from "./styles";
 import { GlobalProvider } from "./GlobalStateContext";
+import { IndexPage } from "./pages";
+import { GlobalStyles, theme } from "./styles";
 
 const App = () => {
   return (
@@ -13,8 +13,7 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<IndexPage />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="*" element={<PageNotFound />} />
+            <Route path="*" element={<IndexPage />} />
           </Routes>
         </BrowserRouter>
       </GlobalProvider>

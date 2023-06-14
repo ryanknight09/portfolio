@@ -62,7 +62,6 @@ const mixins = {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1rem;
-    max-width: 600px;
   `,
 };
 

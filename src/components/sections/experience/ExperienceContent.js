@@ -35,6 +35,7 @@ const StyledExperience = styled.div`
 `;
 
 const ExperienceContent = ({ job }) => {
+  console.log({ job })
   const { title, time, items } = job;
 
   return (

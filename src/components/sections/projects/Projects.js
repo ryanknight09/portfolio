@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import ProjectCard from "./ProjectCard";
 import { useIsInViewport } from "../../../hooks";
+import ProjectCard from "./ProjectCard";
 
 const StyledSection = styled.section`
   ${({ theme }) => theme.mixins.sectionAttrs};
@@ -27,7 +27,7 @@ const Projects = () => {
       <h2>other interesting endeavors...</h2>
       <StyledCards>
         {cards.map((card) => (
-          <ProjectCard key={card} content={card} />
+          <ProjectCard key={card.title} content={card} />
         ))}
       </StyledCards>
     </StyledSection>

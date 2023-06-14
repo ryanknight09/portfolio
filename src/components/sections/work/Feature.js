@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import TextContent from "./TextContent";
 import Pic from "./Pic";
+import TextContent from "./TextContent";
 
 const FlexContainer = styled.div`
   padding: 40px 0;
   display: flex;
+  flex-direction: column;
   color: var(--white);
 
   @media (max-width: 900px) {
@@ -25,20 +26,11 @@ const FlexContainer = styled.div`
   }
 `;
 
-const Feature = ({ reversed, content, img }) => {
+const Feature = ({ content, img }) => {
   return (
     <FlexContainer reversed>
-      {reversed ? (
-        <>
-          <Pic src={img} />
-          <TextContent marginLeft content={content} />
-        </>
-      ) : (
-        <>
-          <TextContent content={content} />
-          <Pic marginLeft src={img} />
-        </>
-      )}
+      <TextContent content={content} />
+      <Pic marginLeft src={img} />
     </FlexContainer>
   );
 };
