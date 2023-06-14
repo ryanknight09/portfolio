@@ -40,7 +40,7 @@ const content = {
     extra: 'UNABLE TO HOST DUE TO SPOTIFY ATTRIBUTION. I would love to showcase this to you during an interview!',
     stack: ["React", "React Query", "Spotify API", "MUI-V5", "Typescript", "Nx Dev", "Firebase"],
     description: `Clone of the Spotify App. This app displays the logged in users profile, with top songs, followers, artists and more. 
-    Also, any song is playable with the web player as well.`,
+    Also, any song is playable with the web player.`,
     gitLink: "https://github.com/ryanknight09/spotify",
     hostedLink: "",
   },
